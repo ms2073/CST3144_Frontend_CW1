@@ -24,7 +24,7 @@ A Vue.js 2.7.16 frontend application for booking after-school lessons with shopp
 - **Shopping Cart**: Add/remove lessons with automatic space management
 - **Checkout Form**: JavaScript regex validation for name (letters) and phone (numbers)
 - **Responsive Design**: Bootstrap 5.3.0 responsive layout
-- **Font Awesome Icons**: Subject-specific icons from backend static middleware
+- **Font Awesome Icons**: Subject-specific SVG images for each lesson type
 - **REST API Integration**: GET (lessons), POST (orders), PUT (update spaces)
 
 ---
@@ -58,7 +58,6 @@ The app connects to the backend at: `https://cst3144-backend-cw1.onrender.com`
 - `GET /lessons/search?q={query}` - Search lessons (backend filtering)
 - `POST /orders` - Submit new order
 - `PUT /lessons/:id` - Update lesson spaces after order
-- `GET /images/{subject}.svg` - Static image files
 
 ---
 
@@ -73,10 +72,15 @@ CST3144_Frontend_CW1/
 │   └── style.css         # Custom styles
 ├── js/
 │   └── app.js            # Vue.js application (components + main app)
+├── images/                # Subject SVG icons
+│   ├── Art.svg
+│   ├── English.svg
+│   ├── History.svg
+│   ├── Math.svg
+│   ├── Music.svg
+│   └── Science.svg
 └── README.md             # This file
 ```
-
-**Note**: Images are served from backend only via static file middleware.
 
 ---
 

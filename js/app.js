@@ -31,28 +31,13 @@ Vue.component('lesson-card', {
     `,
     methods: {
         getSubjectImage(subject) {
-            // Always use backend API for images
-            const svgMap = {
-                'Art': `${API_ROOT}/images/Art.svg`,
-                'English': `${API_ROOT}/images/English.svg`,
-                'History': `${API_ROOT}/images/History.svg`,
-                'Math': `${API_ROOT}/images/Math.svg`,
-                'Music': `${API_ROOT}/images/Music.svg`,
-                'Science': `${API_ROOT}/images/Science.svg`
-            };
-            const pngMap = {
-                'Art': `${API_ROOT}/images/Art.png`,
-                'English': `${API_ROOT}/images/English.png`,
-                'Math': `${API_ROOT}/images/Math.png`,
-                'Music': `${API_ROOT}/images/Music.png`,
-                'Science': `${API_ROOT}/images/Science.png`,
-                'History': `${API_ROOT}/images/History.png`
-            };
-            return svgMap[subject] || pngMap[subject] || `${API_ROOT}/images/Art.svg`;
+            // Use local frontend images
+            return `images/${subject}.svg`;
         },
         onImageError(event) {
+            // Fallback to default image if not found
             event.target.onerror = null;
-            event.target.src = `${API_ROOT}/images/Art.svg`;
+            event.target.src = 'images/Art.svg';
         }
     }
 });
