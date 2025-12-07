@@ -1,0 +1,453 @@
+/* Custom styles for After-School Lessons App */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header styling */
+header {
+    background-color: #f8f9fa !important;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.text-primary {
+    color: #0d6efd !important;
+}
+
+/* Lesson cards styling */
+.lesson-card {
+    background-color: #ffffff;
+    border: 2px solid #c8d6f3;
+    border-radius: 18px;
+    padding: 16px;
+    margin-bottom: 20px;
+}
+
+.lesson-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.lesson-info p {
+    color: #212529;
+}
+
+.lesson-image {
+    width: 96px;
+    height: 96px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.subject-image {
+    max-width: 72px;
+    max-height: 72px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.lesson-btn-inline {
+    min-width: 160px;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .lesson-image {
+        width: 80px;
+        height: 80px;
+    }
+    .subject-image {
+        max-width: 60px;
+        max-height: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    .lesson-image {
+        width: 70px;
+        height: 70px;
+    }
+    .subject-image {
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
+.lesson-content {
+    text-align: left;
+    padding: 20px;
+}
+
+.lesson-subject {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 8px;
+}
+
+.lesson-location {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+.lesson-price {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 8px;
+}
+
+.lesson-spaces {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 16px;
+}
+
+.lesson-btn {
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.lesson-btn:hover:not(:disabled) {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+.lesson-btn:disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Search and sorting styling */
+h3 {
+    color: #212529;
+    font-weight: 600;
+}
+
+h5 {
+    color: #495057;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-control-lg {
+    padding: 12px 16px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.form-control-lg:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.form-select {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Cart button styling */
+.btn-lg {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover:not(:disabled) {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+.btn-primary:disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    opacity: 0.6;
+}
+
+/* Badge styling */
+.badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .lesson-image {
+        height: 80px;
+        padding: 10px;
+    }
+    
+    .subject-image {
+        max-width: 60px;
+        max-height: 60px;
+    }
+    
+    .lesson-content {
+        padding: 16px;
+    }
+    
+    .lesson-subject {
+        font-size: 1.25rem;
+    }
+    
+    .btn-lg {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .lesson-image {
+        height: 70px;
+        padding: 8px;
+    }
+    
+    .subject-image {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    
+    .lesson-content {
+        padding: 12px;
+    }
+    
+    .lesson-subject {
+        font-size: 1.1rem;
+    }
+    
+    .lesson-price {
+        font-size: 1.1rem;
+    }
+}
+
+/* Grid layout for lesson cards */
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.col-md-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Remove default card styling */
+.card {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/* Form validation styling */
+.is-valid {
+    border-color: #198754;
+}
+
+.is-invalid {
+    border-color: #dc3545;
+}
+
+.invalid-feedback {
+    display: block;
+    width: 100%;
+    margin-top: 0.25rem;
+    font-size: 0.875em;
+    color: #dc3545;
+}
+
+/* Animation for cart badge */
+.badge {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Cart and Checkout Styling */
+.cart-header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.empty-cart {
+    margin-top: 40px;
+}
+
+.cart-items .card {
+    border-left: 4px solid #0d6efd;
+    transition: all 0.2s ease-in-out;
+}
+
+.cart-items .card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translateY(-1px);
+}
+
+.cart-item-subject {
+    color: #212529;
+    font-weight: 600;
+}
+
+.cart-item-details {
+    font-size: 0.9rem;
+}
+
+.cart-item-details p {
+    margin-bottom: 4px;
+}
+
+.checkout-container {
+    position: sticky;
+    top: 20px;
+}
+
+.order-items {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.order-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+/* Button improvements */
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover:not(:disabled) {
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+/* Form improvements */
+.form-label {
+    font-weight: 500;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    padding: 10px 12px;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Card improvements */
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Responsive cart improvements */
+@media (max-width: 992px) {
+    .checkout-container {
+        position: static;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-header {
+        padding: 15px;
+    }
+    
+    .cart-item-details {
+        font-size: 0.85rem;
+    }
+    
+    .btn-sm {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
