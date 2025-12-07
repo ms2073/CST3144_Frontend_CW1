@@ -1,6 +1,4 @@
-// Main Vue.js Application
-const { createApp } = Vue;
-
+// Main Vue.js Application (Vue 2.7.16)
 // API Backend root
 const API_ROOT = 'https://cst3144-backend-cw1.onrender.com';
 
