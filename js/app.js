@@ -167,11 +167,14 @@ Vue.component('checkout-form', {
             if (this.nameValid && this.phoneValid) {
                 this.isSubmitting = true;
                 try {
+                    // Format order data to match backend expectations
                     const orderData = {
                         name: this.name,
                         phone: this.phone,
-                        lessons: this.cart,
-                        total: this.totalPrice
+                        lessons: this.cart.map(lesson => ({
+                            id: lesson.id,
+                            quantity: 1
+                        }))
                     };
                     this.$emit('checkout', orderData);
                 } finally {
@@ -413,7 +416,7 @@ new Vue({
                     }
 
                     // Show success message
-                    alert(`Order placed successfully!\n\nOrder Details:\nName: ${orderData.name}\nPhone: ${orderData.phone}\nTotal: £${orderData.total}\nLessons: ${orderData.lessons.length}`);
+                    alert(`Order placed successfully!\n\nOrder Details:\nName: ${orderData.name}\nPhone: ${orderData.phone}\nLessons: ${orderData.lessons.length}`);
 
                     // Clear cart and reset form
                     this.cart = [];
