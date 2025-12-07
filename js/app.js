@@ -358,17 +358,12 @@ new Vue({
                 // Check if lesson is already in cart
                 const existingItem = this.cart.find(item => item.id === lesson.id);
                 if (existingItem) {
-                    // If already in cart, don't add again (as per requirements)
-                    alert('This lesson is already in your cart!');
                     return;
                 }
-                
+
                 // Add to cart and decrement spaces
                 this.cart.push({ ...lesson });
                 lesson.spaces--;
-                
-                // Show success message
-                alert(`${lesson.subject} - ${lesson.location} added to cart!`);
             }
         },
         
@@ -424,9 +419,6 @@ new Vue({
                         }
                     }
 
-                    // Show success message
-                    alert(`Order placed successfully!\n\nOrder Details:\nName: ${orderData.name}\nPhone: ${orderData.phone}\nLessons: ${orderData.lessons.length}`);
-
                     // Clear cart and reset form
                     this.cart = [];
                     this.showCart = false;
@@ -438,7 +430,6 @@ new Vue({
                 }
             } catch (error) {
                 console.error('Error placing order:', error);
-                alert('Failed to place order. Please try again.');
             }
         }
     }
