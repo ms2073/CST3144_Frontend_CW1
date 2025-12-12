@@ -24,7 +24,6 @@ A Vue.js 2.7.16 frontend application for booking after-school lessons with shopp
 - **Shopping Cart**: Add/remove lessons with automatic space management
 - **Checkout Form**: JavaScript regex validation for name (letters) and phone (numbers)
 - **Responsive Design**: Bootstrap 5.3.0 responsive layout
-- **Font Awesome Icons**: Subject-specific SVG images for each lesson type
 - **REST API Integration**: GET (lessons), POST (orders), PUT (update spaces)
 
 ---
@@ -72,13 +71,6 @@ CST3144_Frontend_CW1/
 │   └── style.css         # Custom styles
 ├── js/
 │   └── app.js            # Vue.js application (components + main app)
-├── images/                # Subject SVG icons
-│   ├── Art.svg
-│   ├── English.svg
-│   ├── History.svg
-│   ├── Math.svg
-│   ├── Music.svg
-│   └── Science.svg
 └── README.md             # This file
 ```
 
@@ -125,19 +117,19 @@ CST3144_Frontend_CW1/
 
 ## 📝 Grading Criteria Covered
 
-### General Requirements (20%)
+### General Requirements 
 - ✅ GitHub Repository with 10+ commits
 - ✅ GitHub Pages deployment
 - ✅ Backend hosted on Render
 
-### Frontend Features (72%)
-- ✅ Display 10+ lessons with all attributes (7%)
-- ✅ Sort by 4 attributes with asc/desc (10%)
-- ✅ Add to cart functionality (5%)
-- ✅ Shopping cart with remove (5%)
-- ✅ Checkout with validation (6%)
-- ✅ Backend search with "search as you type" (10%)
-- ✅ Three fetch operations: GET, POST, PUT (9%)
+### Frontend Features 
+- ✅ Display 10+ lessons with all attributes 
+- ✅ Sort by 4 attributes with asc/desc 
+- ✅ Add to cart functionality 
+- ✅ Shopping cart with remove 
+- ✅ Checkout with validation 
+- ✅ Backend search with "search as you type" 
+- ✅ Three fetch operations: GET, POST, PUT 
 
 ---
 
@@ -152,14 +144,14 @@ CST3144_Frontend_CW1/
 ## 👨‍💻 Author
 
 **Mani Shankar**
-- Email: manishankar1432001@gmail.com
-- Student ID: 23049088
+- Email: MP1684@live.mdx.ac.uk
+
 
 ---
 
 ## 📅 Submission Date
 
-December 2024
+December 2025
 
 ---
 
