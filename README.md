@@ -8,7 +8,7 @@ A Vue.js 2.7.16 frontend application for booking after-school lessons with shopp
 
 **[Vue.js App]**
 - GitHub Repository: https://github.com/ms2073/CST3144_Frontend_CW1
-- GitHub Pages (Live App): https://ms2073.github.io/CST3144_Frontend_CW1/
+- GitHub Pages (Live App): https://cst3144cw1frontend.netlify.app/
 
 **[Express.js Backend App]**
 - GitHub Repository: https://github.com/ms2073/CST3144_Backend_CW1
